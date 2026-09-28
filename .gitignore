@@ -1,1 +1,6 @@
 .vercel
+
+# Docs internos (repo público + Vercel sirve todo lo que está en el repo)
+RETOMA.md
+ZELTIK.md
+SESION_*.md
