@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- fondo dark de marca -->
+  <rect width="1024" height="1024" fill="#1A1D2A"/>
+  <!-- caja con borde naranja (logo-icon) -->
+  <rect x="220" y="220" width="584" height="584" fill="none" stroke="#E8922A" stroke-width="52"/>
+  <!-- Z geométrica, peso black -->
+  <polygon fill="#E8922A" points="362,342 662,342 662,416 482,608 662,608 662,682 362,682 362,608 542,416 362,416"/>
+</svg>
