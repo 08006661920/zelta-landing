@@ -1,0 +1,3 @@
+# Las landings de clientes NO son parte de zelta-digital.com.
+# Se publican por separado como Cloudflare Workers (ver clientes/README.md).
+clientes
