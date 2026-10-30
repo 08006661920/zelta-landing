@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  // zelta-digital.com como Worker con assets (migrado de Vercel, 10/2026). Mismo molde que los clientes.
+  "name": "zelta-digital",
+  "compatibility_date": "2026-10-29",
+  "main": "src/worker.js",
+  // La raíz del repo es la carpeta de assets: lo que se publica lo decide la lista de .assetsignore
+  // (todo ignorado salvo lo que se nombra). Archivo nuevo de la página → sumarlo ahí.
+  "assets": { "directory": ".", "binding": "ASSETS", "run_worker_first": true },
+  "vars": {
+    // Host al que redirigen www y http (vacío = sin redirección, para probar en workers.dev).
+    "CANONICO": ""
+  },
+  "workers_dev": true
+}

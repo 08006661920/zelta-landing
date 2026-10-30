@@ -7,3 +7,4 @@ SESION_*.md
 
 # Landings de clientes: viven en su propio repo PRIVADO (zelta-clientes), nunca en este público
 clientes/
+.wrangler

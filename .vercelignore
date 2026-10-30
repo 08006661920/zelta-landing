@@ -1,3 +1,9 @@
 # Las landings de clientes NO son parte de zelta-digital.com.
 # Se publican por separado como Cloudflare Workers (ver clientes/README.md).
 clientes
+
+# Config del Worker de Cloudflare (no es parte de la página)
+wrangler.jsonc
+.assetsignore
+src
+.wrangler

@@ -1,0 +1,10 @@
+# Lista de lo que SE PUBLICA (todo lo demás queda afuera: docs internos, clientes/, config).
+*
+!index.html
+!privacidad.html
+!terminos.html
+!style.css
+!robots.txt
+!sitemap.xml
+!assets/
+!assets/**
