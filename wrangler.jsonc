@@ -8,8 +8,13 @@
   // (todo ignorado salvo lo que se nombra). Archivo nuevo de la página → sumarlo ahí.
   "assets": { "directory": ".", "binding": "ASSETS", "run_worker_first": true },
   "vars": {
-    // Host al que redirigen www y http (vacío = sin redirección, para probar en workers.dev).
-    "CANONICO": ""
+    // Host al que redirigen www y http (vacío = sin redirección).
+    "CANONICO": "zelta-digital.com"
   },
-  "workers_dev": true
+  "workers_dev": false,
+  // cv.zelta-digital.com NO va acá: sigue en Vercel.
+  "routes": [
+    { "pattern": "zelta-digital.com", "custom_domain": true },
+    { "pattern": "www.zelta-digital.com", "custom_domain": true }
+  ]
 }
