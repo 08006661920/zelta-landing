@@ -11,6 +11,8 @@
     // Host al que redirigen www y http (vacío = sin redirección).
     "CANONICO": "zelta-digital.com"
   },
+  // /clientes/* lo atiende el panel (Worker `zelta-panel`, código en el repo PRIVADO zelta-clientes).
+  "services": [{ "binding": "PANEL", "service": "zelta-panel" }],
   "workers_dev": false,
   // cv.zelta-digital.com NO va acá: sigue en Vercel.
   "routes": [
