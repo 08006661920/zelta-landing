@@ -222,6 +222,27 @@ nav {
   line-height: 1.6;
 }
 
+/* ===== PRECIOS ===== */
+.precios { padding: 6rem 6%; text-align: center; }
+.precios h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 0.75rem; }
+.precios-cards { align-items: start; }
+.precio-card { background-color: var(--bg-card); }
+.precio-card:hover { transform: none; }
+.precio-card h3 { font-size: 1.3rem; font-weight: 900; text-transform: uppercase; }
+.precio-card .h3-2 { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #2E3350; }
+.precio-card .precio { color: var(--orange); font-size: 1.9rem; font-weight: 900; line-height: 1.1; margin: 0.25rem 0 0.75rem; }
+.precio-card .precio small { display: block; color: var(--gray); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.2rem; }
+.precio-card .precio-2 { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid #2E3350; font-size: 1.5rem; }
+.precio-card .precio-chico { font-size: 1.3rem; }
+.precio-card ul { list-style: none; padding: 0; margin: 0; }
+.precio-card li { color: var(--gray); font-size: 0.95rem; line-height: 1.5; padding: 0.3rem 0 0.3rem 1.4rem; position: relative; }
+.precio-card li::before { content: "✓"; color: var(--orange); font-weight: 900; position: absolute; left: 0; }
+.precios-ejemplo { max-width: 1100px; margin: 2.5rem auto 0; color: var(--white); font-size: 1.1rem; line-height: 1.6; }
+.precios-ejemplo strong { color: var(--orange); }
+.precios-nota { color: var(--gray); font-size: 0.9rem; margin-top: 0.75rem; }
+.porque { background-color: var(--bg-card); }
+.contacto { background-color: var(--bg) !important; }
+
 /* ===== POR QUÉ ZELTA ===== */
 .porque {
   padding: 6rem 6%;
