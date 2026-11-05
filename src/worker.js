@@ -1,6 +1,6 @@
 // zelta-digital.com: sirve la página estática y manda www y http al dominio canónico con 301
 // (lo que hacía vercel.json). /privacidad y /terminos salen solos de privacidad.html y terminos.html.
-// /clientes/* → panel de clientes (service binding PANEL).
+// /clientes/* y /muestra/* → panel de clientes (service binding PANEL).
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -8,6 +8,8 @@ export default {
       return Response.redirect(`https://${env.CANONICO}${url.pathname}${url.search}`, 301);
     // Panel de clientes: vive en otro Worker (repo privado); acá solo se le pasa el pedido.
     if (url.pathname === "/clientes" || url.pathname.startsWith("/clientes/")) return env.PANEL.fetch(request);
+    // Muestras de página para prospectos: también las sirve el panel (están en su base D1).
+    if (url.pathname.startsWith("/muestra/")) return env.PANEL.fetch(request);
     return env.ASSETS.fetch(request);
   },
 };
